@@ -23,6 +23,13 @@ cur.execute("INSERT INTO person (username, role_description) VALUES (?, ?)",
 cur.execute("INSERT INTO ticket (reason, createdBy) VALUES (?, ?)",
             ('Webserver started nicht', 1)
             )
+cur.execute("INSERT INTO ticket (reason, createdBy) VALUES (?, ?)",
+            ('Mit dem Motorrad zur Arbeit fahren', 1)
+            )
+cur.execute("INSERT INTO ticket (reason, createdBy) VALUES (?, ?)",
+            ('Liam Abendessen machen', 2)
+            )
+
 
 connection.commit()
 connection.close()
